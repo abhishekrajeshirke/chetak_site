@@ -1,0 +1,37 @@
+
+<div id="" class="project-slider" ng-init="scrollTop()"  ng-controller="projectsCtrl">
+  <div class="bar-slider">
+    <div class="container">
+
+      <ul class="list-inline project_slider list-unstyled">
+        <ng-owl-carousel class="owl-theme" owl-items="appData.projects" owl-properties="properties" owl-ready="ready($api)">
+          <li class="item"  ng-if="project.type=='Completed'" data-ng-repeat="project in renderedProjects.completed">
+            <a href="#" ng-click="navigateToProject('c',project)" style="background-image: url('{{project.thumbnail}}')">
+              {{project.title}}
+            </a>
+          </li>
+
+        </ng-owl-carousel>
+
+      </ul>
+
+
+
+    </div>
+  </div>
+  <div class="container" style="margin-top:2rem; margin-bottom:4rem;">
+    <div class="row">
+      <div class="">
+        <a class="back-btn" href="javascript:void(0)" ui-sref="operational"><img src="images/back.svg" width="20" /> </a> 
+      </div>
+      <div class="col-md-4" ng-if="project.type=='Completed'" ng-repeat="project in appData.projects">
+        <h3>{{project.title}}</h3>
+        <p ng-if="project.startdate"><b>Start Date:</b> {{project.startdate}}</p>
+        <p ng-if="project.scheduledcompletiondate"><b>Scheduled Completion Date:</b> {{project.scheduledcompletiondate}}</p>
+        <p ng-if="project.actualcompletiondate"><b>Actual Completion Date:</b> {{project.actualcompletiondate}}</p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <p class="text-center"><a class="dir-link" href="javascript:void(0)" ui-sref="financials">Financials</a></p>
+</div>

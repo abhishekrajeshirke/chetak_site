@@ -1,0 +1,749 @@
+<div id="" ng-controller="financialsCtrl" ng-init="scrollTop()" class="financials" ng-if="appData.financials">
+  <div class="fin-bg" ng-style="{'background':'url('+appData.financials.headerImage+') no-repeat'}">
+
+  </div>
+  <div class="container">
+    <div class="row ">
+
+
+      <!-- Nav tabs -->
+      <!-- <ul class="nav nav-tabs nav-justified" role="tablist">
+        <li role="presentation" style="font-size:28px; margin-top:28px; font-weightbold; " class="active">  <a style="display:inline-block" href="#key_indicators" aria-controls="key_indicators" role="tab" data-toggle="tab"></a></li>
+        <!-- <li role="presentation"><a href="#annual_accounts" aria-controls="annual_accounts" role="tab" data-toggle="tab">Annual Accounts</a></li> -->
+      <!-- </ul> -->
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="panel-heading text-center">
+          <h2> <a style="display:inline-block;" class="back-btn" href="javascript:void(0)" ui-sref="completed"><img src="images/back.svg" width="20" /> </a> Key Indicators</h2>
+
+        </div>
+        <div role="tabpanel" class="tab-pane active" id="key_indicators">
+          <h3>Chetak Financials 2016-17:</h3>
+          <!-- <table class="table table-striped">
+            <tbody>
+              <tr>
+                <td class="td1" rowspan="2" valign="top">
+                  <p class="p1"><span class="s1"><strong>Particulars</strong></span></p>
+                </td>
+                <td class="td2" valign="top">
+                  <p class="p2"><span class="s1"><strong>31.03.14</strong></span></p>
+                </td>
+                <td class="td3" valign="top">
+                  <p class="p2"><span class="s1"><strong>31.03.15</strong></span></p>
+                </td>
+                <td class="td4" valign="top">
+                  <p class="p2"><span class="s1"><strong>31.03.16</strong></span></p>
+                </td>
+                <td class="td4" valign="top">
+                  <p class="p2"><span class="s1"><strong>31.03.17</strong></span></p>
+                </td>
+              </tr>
+              <tr>
+                <td class="td5" valign="top">
+                  <p class="p3"><span class="s1"><strong>Audited</strong></span></p>
+                </td>
+                <td class="td6" valign="top">
+                  <p class="p3"><span class="s1"><strong>Audited</strong></span></p>
+                </td>
+                <td class="td7" valign="top">
+                  <p class="p3"><span class="s1"><strong>Audited</strong></span></p>
+                </td>
+                <td class="td7" valign="top">
+                  <p class="p3"><span class="s1"><strong>Audited</strong></span></p>
+                </td>
+              </tr>
+              <tr>
+                <td class="td8" valign="top">
+                  <p class="p4"><span class="s1"><strong>Net Sales</strong></span></p>
+                </td>
+                <td class="td9" valign="top">
+                  <p class="p5"><span class="s1">469.99</span></p>
+                </td>
+                <td class="td10" valign="top">
+                  <p class="p5"><span class="s1">903.37</span></p>
+                </td>
+                <td class="td11" valign="top">
+                  <p class="p6"><span class="s1">747.25</span></p>
+                </td>
+                <td class="td11" valign="top">
+                  <p class="p6"><span class="s1">470.23</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td class="td12" valign="top">
+                  <p class="p4"><span class="s1"><strong>PBDIT</strong></span></p>
+                </td>
+                <td class="td5" valign="top">
+                  <p class="p5"><span class="s1">148.69</span></p>
+                </td>
+                <td class="td6" valign="top">
+                  <p class="p5"><span class="s1">180.13</span></p>
+                </td>
+                <td class="td7" valign="top">
+                  <p class="p5"><span class="s1">218.47</span></p>
+                </td>
+                <td class="td7" valign="top">
+                  <p class="p5"><span class="s1">143.87</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td class="td8" valign="top">
+                  <p class="p4"><span class="s1"><strong>Depreciation</strong></span></p>
+                </td>
+                <td class="td9" valign="top">
+                  <p class="p5"><span class="s1">50.57</span></p>
+                </td>
+                <td class="td10" valign="top">
+                  <p class="p5"><span class="s1">64.53</span></p>
+                </td>
+                <td class="td11" valign="top">
+                  <p class="p5"><span class="s1">58.76</span></p>
+                </td>
+                <td class="td11" valign="top">
+                  <p class="p5"><span class="s1">55.03</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td class="td12" valign="top">
+                  <p class="p4"><span class="s1"><strong>Financial Cost</strong></span></p>
+                </td>
+                <td class="td5" valign="top">
+                  <p class="p5"><span class="s1">32.08</span></p>
+                </td>
+                <td class="td6" valign="top">
+                  <p class="p5"><span class="s1">32.58</span></p>
+                </td>
+                <td class="td7" valign="top">
+                  <p class="p5"><span class="s1">28.97</span></p>
+                </td>
+                <td class="td7" valign="top">
+                  <p class="p5"><span class="s1">31.76</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td class="td8" valign="top">
+                  <p class="p4"><span class="s1"><strong>Profit Before Tax (PBT)</strong></span></p>
+                </td>
+                <td class="td9" valign="top">
+                  <p class="p5"><span class="s1">66.04</span></p>
+                </td>
+                <td class="td10" valign="top">
+                  <p class="p5"><span class="s1">83.02</span></p>
+                </td>
+                <td class="td11" valign="top">
+                  <p class="p5"><span class="s1">130.74</span></p>
+                </td>
+                <td class="td11" valign="top">
+                  <p class="p5"><span class="s1">57.08</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td class="td12" valign="top">
+                  <p class="p4"><span class="s1"><strong>Tax</strong></span></p>
+                </td>
+                <td class="td5" valign="top">
+                  <p class="p5"><span class="s1">17.48</span></p>
+                </td>
+                <td class="td6" valign="top">
+                  <p class="p5"><span class="s1">28.26</span></p>
+                </td>
+                <td class="td7" valign="top">
+                  <p class="p5"><span class="s1">20.62</span></p>
+                </td>
+                <td class="td7" valign="top">
+                  <p class="p5"><span class="s1">14.35</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td class="td8" valign="top">
+                  <p class="p4"><span class="s1"><strong>Profit After Tax (PAT)</strong></span></p>
+                </td>
+                <td class="td9" valign="top">
+                  <p class="p5"><span class="s1">48.56</span></p>
+                </td>
+                <td class="td10" valign="top">
+                  <p class="p5"><span class="s1">54.76</span></p>
+                </td>
+                <td class="td11" valign="top">
+                  <p class="p5"><span class="s1">110.12</span></p>
+                </td>
+                <td class="td11" valign="top">
+                  <p class="p5"><span class="s1">42.73</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td class="td12" valign="top">
+                  <p class="p4"><span class="s1"><strong>Cash Accrual</strong></span></p>
+                </td>
+                <td class="td5" valign="top">
+                  <p class="p5"><span class="s1">99.13</span></p>
+                </td>
+                <td class="td6" valign="top">
+                  <p class="p5"><span class="s1">119.29</span></p>
+                </td>
+                <td class="td7" valign="top">
+                  <p class="p5"><span class="s1">168.88</span></p>
+                </td>
+                <td class="td7" valign="top">
+                  <p class="p5"><span class="s1">97.75</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td class="td8" valign="top">
+                  <p class="p4"><span class="s1"><strong>Paid up capital</strong></span></p>
+                </td>
+                <td class="td9" valign="top">
+                  <p class="p5"><span class="s1">16.50</span></p>
+                </td>
+                <td class="td10" valign="top">
+                  <p class="p5"><span class="s1">16.50</span></p>
+                </td>
+                <td class="td11" valign="top">
+                  <p class="p5"><span class="s1">16.50</span></p>
+                </td>
+                <td class="td11" valign="top">
+                  <p class="p5"><span class="s1">16.50</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td class="td12" valign="top">
+                  <p class="p4"><span class="s1"><strong>Tangible Net Worth (TNW)</strong></span></p>
+                </td>
+                <td class="td5" valign="top">
+                  <p class="p5"><span class="s1">397.72</span></p>
+                </td>
+                <td class="td6" valign="top">
+                  <p class="p5"><span class="s1">465.86</span></p>
+                </td>
+                <td class="td7" valign="top">
+                  <p class="p5"><span class="s1">555.01</span></p>
+                </td>
+                <td class="td7" valign="top">
+                  <p class="p5"><span class="s1">575.39</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td class="td8" valign="top">
+                  <p class="p4"><span class="s1"><strong>Current Ratio</strong></span></p>
+                </td>
+                <td class="td9" valign="top">
+                  <p class="p5"><span class="s1">0.97</span></p>
+                </td>
+                <td class="td10" valign="top">
+                  <p class="p5"><span class="s1">0.77</span></p>
+                </td>
+                <td class="td11" valign="top">
+                  <p class="p5"><span class="s1">0.92</span></p>
+                </td>
+                <td class="td11" valign="top">
+                  <p class="p5"><span class="s1">1.16</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td class="td12" valign="top">
+                  <p class="p4"><span class="s1"><strong>TOL/TNW</strong></span></p>
+                </td>
+                <td class="td5" valign="top">
+                  <p class="p5"><span class="s1">1.67</span></p>
+                </td>
+                <td class="td6" valign="top">
+                  <p class="p5"><span class="s1">1.42</span></p>
+                </td>
+                <td class="td7" valign="top">
+                  <p class="p5"><span class="s1">0.83</span></p>
+                </td>
+                <td class="td7" valign="top">
+                  <p class="p5"><span class="s1">0.97</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td class="td8" valign="top">
+                  <p class="p4"><span class="s1"><strong>Debt/Equity ratio</strong></span></p>
+                </td>
+                <td class="td9" valign="top">
+                  <p class="p5"><span class="s1">0.77</span></p>
+                </td>
+                <td class="td10" valign="top">
+                  <p class="p5"><span class="s1">0.44</span></p>
+                </td>
+                <td class="td11" valign="top">
+                  <p class="p5"><span class="s1">0.23</span></p>
+                </td>
+                <td class="td11" valign="top">
+                  <p class="p5"><span class="s1">0.08</span></p>
+                </td>
+              </tr>
+            </tbody>
+          </table> -->
+
+          <table class="table table-striped">
+            <tbody>
+              <tr>
+                <td rowspan="2" bgcolor="#70ad47" width="207" height="3">
+                  <p align="CENTER"><span style="color: #ffffff;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">Particulars</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#70ad47" width="73">
+                  <p align="CENTER"><span style="color: #ffffff;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">31.03.14</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#70ad47" width="106">
+                  <p align="CENTER"><span style="color: #ffffff;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">31.03.15</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#70ad47" width="95">
+                  <p align="CENTER"><span style="color: #ffffff;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">31.03.16</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#70ad47" width="94">
+                  <p align="CENTER"><span style="color: #ffffff;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">31.03.17</span></span>
+                    </span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#e2efd9" width="73">
+                  <p align="CENTER"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;"><strong>Audited</strong></span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="106">
+                  <p align="CENTER"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;"><strong>Audited</strong></span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="95">
+                  <p align="CENTER"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;"><strong>Audited</strong></span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="94">
+                  <p align="CENTER"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;"><strong>Audited</strong></span></span>
+                    </span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td width="207" height="2">
+                  <p align="JUSTIFY"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">Net Sales</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="73">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">4699.9</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="106">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">9033.7</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="95">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">7472.5</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="94">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">4702.3</span></span>
+                    </span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#e2efd9" width="207" height="2">
+                  <p align="JUSTIFY"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">PBDIT</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="73">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">1486.9</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="106">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">1801.3</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="95">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">2184.7</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="94">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">1438.7</span></span>
+                    </span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td width="207" height="4">
+                  <p align="JUSTIFY"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">Depreciation</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="73">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">505.7</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="106">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">645.3</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="95">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">587.6</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="94">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">550.3</span></span>
+                    </span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#e2efd9" width="207" height="4">
+                  <p align="JUSTIFY"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">Financial Cost</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="73">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">320.8</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="106">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">325.8</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="95">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">289.7</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="94">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">317.6</span></span>
+                    </span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td width="207" height="4">
+                  <p align="JUSTIFY"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">Profit Before Tax (PBT)</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="73">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">660.4</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="106">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">830.2</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="95">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">1307.4</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="94">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">570.8</span></span>
+                    </span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#e2efd9" width="207" height="4">
+                  <p align="JUSTIFY"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">Tax</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="73">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">174.8</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="106">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">282.6</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="95">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">206.2</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="94">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">143.5</span></span>
+                    </span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td width="207" height="4">
+                  <p align="JUSTIFY"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">Profit After Tax (PAT)</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="73">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">485.6</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="106">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">547.6</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="95">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">1101.2</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="94">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">427.3</span></span>
+                    </span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#e2efd9" width="207" height="4">
+                  <p align="JUSTIFY"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">Cash Accrual</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="73">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">991.3</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="106">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">1192.9</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="95">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">1688.8</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="94">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">977.5</span></span>
+                    </span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td width="207" height="5">
+                  <p align="JUSTIFY"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">Paid up capital</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="73">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">165</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="106">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">165</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="95">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">165</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="94">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">165</span></span>
+                    </span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#e2efd9" width="207" height="5">
+                  <p align="JUSTIFY"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">Tangible Net Worth (TNW)</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="73">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">3977.2</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="106">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">4658.6</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="95">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">5550.1</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="94">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">5753.9</span></span>
+                    </span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td width="207" height="5">
+                  <p align="JUSTIFY"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">Current Ratio</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="73">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">0.97</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="106">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">0.77</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="95">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">0.92</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="94">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">1.16</span></span>
+                    </span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#e2efd9" width="207" height="5">
+                  <p align="JUSTIFY"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">TOL/TNW</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="73">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">16.7</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="106">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">14.2</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="95">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">8.3</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td bgcolor="#e2efd9" width="94">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">9.7</span></span>
+                    </span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td width="207" height="4">
+                  <p align="JUSTIFY"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">Debt/Equity ratio</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="73">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">0.77</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="106">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">0.44</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="95">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">0.23</span></span>
+                    </span>
+                  </p>
+                </td>
+                <td width="94">
+                  <p align="RIGHT"><span style="color: #000000;"><span style="font-family: 'Trebuchet MS', serif;"><span style="font-size: small;">0.08</span></span>
+                    </span>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Credit Rating</h3>
+          <table class="table table-striped">
+            <tbody>
+              <tr>
+                <td class="td1" valign="middle">
+                  <p class="p1"><span class="s1"><strong>Facilities</strong></span></p>
+                </td>
+                <td class="td2" valign="middle">
+                  <p class="p1"><span class="s1"><strong>Amount</strong></span></p>
+                  <p class="p1"><span class="s1"><strong>(INR. In Mn)</strong></span></p>
+                </td>
+                <td class="td3" valign="middle">
+                  <p class="p1"><span class="s1"><strong>Present Rating</strong></span></p>
+                </td>
+              </tr>
+              <tr>
+                <td class="td4" valign="middle">
+                  <p class="p2"><span class="s1">Long Term Bank Facilities (Term Loan)</span></p>
+                </td>
+                <td class="td5" valign="middle">
+                  <p class="p2"><span class="s1">3516.9</span></p>
+                </td>
+                <td class="td6" valign="middle">
+                  <p class="p2"><span class="s1">CARE A+</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td class="td7" valign="middle">
+                  <p class="p2"><span class="s1">Long Term/ Short term Bank Facilities (Fund Based)</span></p>
+                </td>
+                <td class="td8" valign="middle">
+                  <p class="p2"><span class="s1">4500.0</span></p>
+                </td>
+                <td class="td9" valign="middle">
+                  <p class="p2"><span class="s1">CARE A+/ A1+</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td class="td4" valign="middle">
+                  <p class="p2"><span class="s1">Short Term Bank Facilities (Non Fund Based)</span></p>
+                </td>
+                <td class="td5" valign="middle">
+                  <p class="p2"><span class="s1">20.0</span></p>
+                </td>
+                <td class="td6" valign="middle">
+                  <p class="p2"><span class="s1">CARE A1+</span></p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- <div role="tabpanel" class="tab-pane" id="annual_accounts"> -->
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="clearfix text-center">
+    <a class="dir-link" ui-sref="resources" href="javascript:void(0)">Resources</a>
+  </div>
+
+</div>
+</div>

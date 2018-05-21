@@ -1,0 +1,59 @@
+<img class="img-responsive" src="assets/images/clients/clients.jpg">
+<div id="" class="clients container" ng-init="scrollTop()" ng-if="appData.clients" style="padding:3rem 0; ">
+
+  <div class="text-left">
+
+    <a style="display:inline-block;" class="back-btn " href="javascript:void(0)" ui-sref="management"><img src="images/back.svg" width="20" /> </a>
+  </div>
+  <!-- Nav tabs --><br />
+   <ul class="nav nav-tabs nav-justified" role="tablist">
+     <li role="presentation" class="active"><a href="#clients" aria-controls="clients" role="tab" data-toggle="tab">Clients</a></li>
+     <li role="presentation"><a href="#bankers" aria-controls="bankers" role="tab" data-toggle="tab">Bankers</a></li>
+     <li role="presentation"><a href="#design_consultants" aria-controls="design_consultants" role="tab" data-toggle="tab">Design Consultants</a></li>
+   </ul>
+
+   <!-- Tab panes -->
+   <div class="tab-content">
+     <div role="tabpanel" class="tab-pane active" id="clients">
+
+         <div class=" text-center client-wrapper clearfix" style="" >
+           <div class="col-md-4 client-desc" style="min-height:150px;" ng-repeat="client in appData.clients">
+             <img ng-src="{{client.url}}"  style="max-width:150px; max-height:80px;"   />
+             <h6>{{client.name}}</h6>
+           </div>
+
+
+
+         </div>
+       </div>
+       <div role="tabpanel" class="tab-pane" id="bankers">
+         <div class=" text-center client-wrapper clearfix" style=" " >
+           <!-- <div class="col-md-4 client-desc" style="min-height:150px; max-height:150px;" ng-repeat="banker in appData.bankers"> -->
+             <img ng-repeat="banker in appData.bankers" ng-src="{{banker.url}}" style="max-width:150px; max-height:100px; margin:20px;"  />
+             <!-- <h3>{{banker.name}}</h3>? -->
+           </div>
+
+
+
+         </div>
+
+         <div role="tabpanel" class="tab-pane" id="design_consultants">
+           <div class=" text-center client-wrapper clearfix" style="" >
+             <div class="col-md-3 client-desc" style="min-height:150px;" ng-repeat="consultant in appData.design_consultants">
+               <img ng-src="{{consultant.url}}" style="max-width:150px; max-height:80px;"   />
+               <h6>{{consultant.name}}</h6>
+             </div>
+
+           </div>
+         </div>
+      </div>
+
+   </div>
+
+
+
+ <div class="conntainer text-center" style="margin-top:2rem;">
+   <a class="dir-link" ui-sref="recognition" href="javascript:void(0)">News</a>
+ </div>
+
+</div>

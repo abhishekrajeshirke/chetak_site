@@ -1,0 +1,82 @@
+<div id="header-holder" ng-init="scrollTop()" >
+  <nav id="nav" class="navbar navbar-default navbar-full">
+      <div class="container-fluid">
+          <div class="container container-nav">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="navbar-header">
+                          <button aria-expanded="false" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                          </button>
+                          <a class="logo-holder" ui-sref="home" href="javascript:void(0)">
+                              <div class="logo" style="width:62px;height:18px"></div>
+                          </a>
+                      </div>
+                      <div style="height: 1px;" role="main" aria-expanded="false" class="navbar-collapse collapse" id="bs">
+                          <ul class="nav navbar-nav " style=" padding-left:3rem;">
+
+                            <li data-toggle="collapse" data-target=".navbar-collapse" class="dropdown">
+                              <a ui-sref="home"  href="javascript:void(0)"><i class="fa  fa-home"></i> Home</a>
+
+                            </li>
+                            <li data-toggle="collapse" data-target=".navbar-collapse" class="dropdown">
+                              <a ui-sref="about"  href="javascript:void(0)">About </a>
+
+                            </li>
+
+                            <li class="dropdown">
+                              <a href="javascript:void(0)">Projects </a>
+                              <ul class="dropdown-menu dropdown">
+                                  <li>
+                                    <a href="javascript:void(0)">
+                                      Domestic <i class="fa fa-caret-right"></i>
+                                    </a>
+                                    <ul class="sub-dropdown-menu">
+                                        <li data-toggle="collapse" data-target=".navbar-collapse"><a ui-sref="under_construction" href="javascript:void(0)">Under Construction</a></li>
+                                        <li data-toggle="collapse" data-target=".navbar-collapse"><a ui-sref="operational" href="javascript:void(0)">Operational</a></li>
+                                        <li data-toggle="collapse" data-target=".navbar-collapse"><a ui-sref="completed" href="javascript:void(0)">Completed</a></li>
+                                    </ul>
+
+
+                                  </li>
+                                  <li data-toggle="collapse" data-target=".navbar-collapse">
+                                    <a ui-sref="international" href="javascript:void(0)">
+                                      International
+                                    </a>
+                                  </li>
+                              </ul>
+                            </li>
+                            <!-- <li><a href="machinery.html">Machinery</a></li> -->
+                            <li><a ui-sref="financials" href="javascript:void(0)">Financials</a></li>
+                            <li class="dropdown" data-toggle="collapse" data-target=".navbar-collapse" >
+                              <a ui-sref="resources" href="javascript:void(0)">Resources</a>
+
+                            </li>
+                            <li class="dropdown" data-toggle="collapse" data-target=".navbar-collapse">
+                              <a ui-sref="management" href="javascript:void(0)">Management</a>
+
+                            </li>
+
+
+
+                            <li class="dropdown" data-toggle="collapse" data-target=".navbar-collapse"><a ui-sref="associates" href="javascript:void(0)">Associates</a></li>
+                            <!-- <li class="support-button-holder support-dropdown"> -->
+                            <li class="dropdown" data-toggle="collapse" data-target=".navbar-collapse" >
+                              <a ui-sref="recognition"  href="javascript:void(0)">News </a>
+
+                            </li>
+
+
+                            <li class="dropdown" data-toggle="collapse" data-target=".navbar-collapse">
+                                  <a ui-sref="contact" class="support-button" href="javascript:void(0)">Contact us</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </nav>
+</div>

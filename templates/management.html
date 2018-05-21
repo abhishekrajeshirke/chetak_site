@@ -1,0 +1,78 @@
+
+<div id="info" class="container-fluid" ng-init="scrollTop()"  ng-controller="managementCtrl" ng-if="appData.management.length">
+    <div class="container">
+      <div class="text-left">
+        <br>
+        <a style="display:inline-block;" class="back-btn " href="javascript:void(0)" ui-sref="resources"><img src="images/back.svg" width="20" /> </a>
+      </div>
+        <div class="row">
+
+          <div style="position:relative; ">
+            <div class=" directors-container col-md-12">
+              <div ng-scrollbars ng-scrollbars-config="{scrollInertia:10}">
+
+                <div class=" directors-list  clearfix">
+
+                  <div ng-click="changeDirector(director)" data-toggle="modal" data-target="#managementModal" class="item col-md-4 clearfix" ng-repeat="director in appData.management">
+                    <!-- <figure>
+                      <img ng-src="{{director.url}}">
+                    </figure> -->
+                    <h4>{{director.name}}</h4>
+                    <p><strong>{{director.designation}}</strong></p>
+                    <!-- <p>DIN: {{director.din}}</p> -->
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="clearfix"></div>
+          <br /><br /><br />
+          <div class="clearfix"></div>
+          <p class="text-center"><a class="dir-link" href="javascript:void(0)" ui-sref="associates">Associates</a></p>
+        </div>
+
+        </div>
+
+        <!-- Modal -->
+        <div id="managementModal" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="directors-info">
+                <article>
+                  <figure ng-if="activeDirector.url">
+                    <img height="100" ng-src="{{activeDirector.url}}">
+                  </figure>
+                  <h2>{{activeDirector.name}}</h2>
+                  <p>{{activeDirector.designation}}</p>
+                  <!-- <p>DIN: {{activeDirector.din}}</p> -->
+                  <p class="blockquote">{{activeDirector.blockquote}}</p>
+                  <p ng-repeat="para in activeDirector.desc">{{para}}</p>
+                </article>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
